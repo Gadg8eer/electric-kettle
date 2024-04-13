@@ -6,7 +6,22 @@ grf {
 	desc: string(STR_GRF_DESC);
 	version: 0;
 	min_compatible_version: 0;
-
+	param {
+		param_axle_weight {
+		type: int;
+		name: string(STR_PARAM_AXLE_WEIGHT_NAME);
+		desc: string(STR_PARAM_AXLE_WEIGHT_DESC);
+		min_value: 0;
+		max_value: 2;
+		def_value: 1;
+			names: {
+				0: string(STR_PARAM_AXLE_WEIGHT_NONE);
+				1: string(STR_PARAM_AXLE_WEIGHT_STANDARD);
+				2: string(STR_PARAM_AXLE_WEIGHT_PONY);
+				3: string(STR_PARAM_AXLE_WEIGHT_CLYDESDALE);
+			};
+        }
+    }
 	url: string(STR_WEBSITE);
 }
 
